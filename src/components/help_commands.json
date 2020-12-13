@@ -1,0 +1,114 @@
+{
+    "Help": {
+        "name":"Help",
+        "group":"User",
+        "desc":"Displays a list of commands.",
+        "usage":"help [command]",
+        "help":"help",
+        "alias":""
+    },
+    "Moodle": {
+        "name":"Moodle",
+        "group":"",
+        "desc":"Returns a moodle link.",
+        "usage":"moodle",
+        "help":"moodle",
+        "alias":""
+    },
+    "Kide": {
+        "name":"Kide",
+        "group":"",
+        "desc":"Returns a kide app link.",
+        "usage":"kide",
+        "help":"kide",
+        "alias":""
+    },
+    "MyNet": {
+        "name":"MyNet",
+        "group":"",
+        "desc":"Returns a link to Haaga-Helia MyNet login page.",
+        "usage":"mynet",
+        "help":"mynet",
+        "alias":""
+    },
+    "Bistro": {
+        "name":"Bistro today",
+        "group":"",
+        "desc":"Returns todays Haaga-Helia Pasila campus bistro menu.",
+        "usage":"bistro [week]",
+        "help":"bistro",
+        "alias":"b [w]"
+    },
+    "Lukkari": {
+        "name":"Lukkari",
+        "group":"",
+        "desc":"Returns a link to Haaga-Helia lukkarikone.",
+        "usage":"lukkari",
+        "help":"lukkari",
+        "alias":"timetable/tt"
+    },
+    "Covid": {
+        "name":"Covid",
+        "group":"",
+        "desc":"Returns information about covid-19.",
+        "usage":"covid [country]",
+        "help":"covid",
+        "alias":"c/cov/virus"
+    },
+    "Google Maps Picture": {
+        "name":"Google Map Picture",
+        "group":"",
+        "desc":"Returns a map of the specified location as a picture.",
+        "usage":"map <location>",
+        "help":"map",
+        "alias":""
+    },
+    "Google Places": {
+        "name":"Near Reastaurants",
+        "group":"",
+        "desc":"Returns up to 7  nearest restaurants to a specified location.",
+        "usage":"places <location>",
+        "help":"places",
+        "alias":""
+    },
+    "Google Travel Time": {
+        "name":"Travel Time",
+        "group":"",
+        "desc":"Returns estimated travel time between two specified locations.",
+        "usage":"distance <from> <to>",
+        "help":"distance",
+        "alias":"dist"
+    },
+    "HSL": {
+        "name":"HSL",
+        "group":"",
+        "desc":"Returns information about HSL public transport route between specified locations.",
+        "usage":"hsl <from> <to>",
+        "help":"hsl",
+        "alias":"route/rt"
+    },
+    "Helsinki City": {
+        "name":"Helsinki City events",
+        "group":"",
+        "desc":"Returns nearest Helsinki City events to a specified location.",
+        "usage":"events <location>",
+        "help":"events",
+        "alias":""
+    },
+    "Demo": {
+        "name":"Demo",
+        "group":"",
+        "desc":"Displays different ways for bot to send and format messages",
+        "usage":"demo [withembed]",
+        "help":"demo",
+        "alias":""
+    },
+    "Haiku": {
+        "name":"Haiku",
+        "group":"",
+        "desc":"Sends random haiku to the channel",
+        "usage":"haiku",
+        "help":"haiku",
+        "alias":""
+    }
+}

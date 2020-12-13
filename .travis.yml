@@ -1,0 +1,11 @@
+language: python
+python:
+  - "3.7"
+install:
+  - pip3 install -r reqs.txt
+ # - pip install dotenv; [10.11.2020] putting this in the requirements (reqs.txt) and for pip3 install as intended.
+script: 
+  - coverage run -m --source=. pytest # Run at the current level. Updated. Updating once more.
+after_success:
+  - coverage report -m
+  - coverage report -m >> coverage.txt

@@ -137,34 +137,31 @@ Command call: -events
 Tells the user the five (5) closest events in Helsinki at users spesified location. Command also shows information about the event like description and event photo.
 
 
-
-### HSL
-
-Command call: -hsl
-
-=======
 ### Route Planning
->commands: **-route** OR **-rt**
->
->User is able to recieve information about a trip from point A to point B.
->
->### Usage
->Use spaces **ONLY** to **separate** the **prefix** (-route or -rt), the **origin** and the **destination** from each other.  
->**e.g. -route [origin] [destination]**
->
->Use "-" instead of a space when writing address numbers  
->**e.g. -route valtimotie-3,vantaa jätkäsaari**
->
->Use "," to add address details to origin or destination  
->**e.g. -route valtimotie-3,vantaa jätkäsaari**
->
->The module also accepts Points of Interest as an origin or a destination  
->**e.g. Shopping Centers**
->
->### Examples
->-route valtimotie-3,vantaa jätkäsaari  
->-rt gigantti,tammisto itäkeskus  
->-route helsinki vantaa  
+commands: **-route** OR **-rt**
+
+User is able to recieve information about a trip from point A to point B.
+
+#### Usage
+
+*NOTE: **Both** Origin and Destination **MUST** be within the **Helsinki Metropolitan Area**. The bot will notice the user upon requesting invalid locations.*  
+
+Use spaces **ONLY** to **separate** the **prefix** (-route or -rt), the **origin** and the **destination** from each other.  
+**e.g. -route [origin] [destination]**
+
+Use "-" instead of a space when writing address numbers  
+**e.g. -route valtimotie-3,vantaa jätkäsaari**
+
+Use "," to add address details to origin or destination  
+**e.g. -route valtimotie-3,vantaa jätkäsaari**
+
+The module also accepts Points of Interest as an origin or a destination  
+**e.g. Shopping Centers**
+
+#### Examples
+-route valtimotie-3,vantaa jätkäsaari  
+-rt gigantti,tammisto itäkeskus  
+-route helsinki vantaa  
 
 ### How to add the bot to your discord server
 

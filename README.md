@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/Rubber-Duck-LTD/DiscordBot_withCommand.svg?token=ysx6cBmd1gRqzuxjKiFK&branch=main)](https://travis-ci.com/Rubber-Duck-LTD/DiscordBot_withCommand)
+[![Build Status](https://travis-ci.com/Rubber-Duck-LTD/RubberDucksDiscordBot.svg?branch=main)](https://travis-ci.com/Rubber-Duck-LTD/RubberDucksDiscordBot)
 ![workflow_name](https://github.com/Rubber-Duck-LTD/RubberDucksDiscordBot/workflows/Python%20application%20-%20DiscordBot,%20Rubber%20Ducks%20Ltd,%20testing/badge.svg)
 ![GitHub top language](https://img.shields.io/github/languages/top/Rubber-Duck-LTD/RubberDucksDiscordBot)
 

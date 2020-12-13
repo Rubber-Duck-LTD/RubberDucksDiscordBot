@@ -2,6 +2,7 @@
 ![workflow_name](https://github.com/Rubber-Duck-LTD/RubberDucksDiscordBot/workflows/Python%20application%20-%20DiscordBot,%20Rubber%20Ducks%20Ltd,%20testing/badge.svg)
 ![GitHub top language](https://img.shields.io/github/languages/top/Rubber-Duck-LTD/RubberDucksDiscordBot)
 ![GitHub contributors](https://img.shields.io/github/contributors/Rubber-Duck-LTD/RubberDucksDiscordBot)
+![GitHub commit activity](https://img.shields.io/github/commit-activity/w/Rubber-Duck-LTD/RubberDucksDiscordBot?logo=phabricator&style=flat-square)
 ![GitHub](https://img.shields.io/github/license/Rubber-Duck-LTD/RubberDucksDiscordBot?logo=GitHub&style=for-the-badge)
 
 ## NOTE:

@@ -1,0 +1,53 @@
+# A workflow that handles the same kind of aspects of testing as Travis CI. Initial testing.
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-python-with-github-actions
+
+name: Python application - DiscordBot, Rubber Ducks Ltd, testing
+
+on: # On push and pull -requests.
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest # The "os" on which this whole build is run on. Always latest as of now.
+
+    steps:
+    - uses: actions/checkout@v2 # Uses these actions.
+    - name: Set up Python 3.8
+      uses: actions/setup-python@v2 # Uses specified actions, a lot of functionality behind the scenes.
+      with:
+        python-version: 3.8 # Only using this version, no need for Matrix, our development is handled by this.
+    - name: Install dependencies from reqs.txt and other defined aspects.
+      run: |
+        python -m pip install --upgrade pip
+        pip install flake8 pytest
+        if [ -f reqs.txt ]; then pip install -r reqs.txt; fi # If the file is found, this will be run.
+    - name: Lint with flake8.
+      run: |
+        # [Initial strings of text... Explaining functionality.] stop the build if there are Python syntax errors or undefined names
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+        # [Initial strings of text... Explaining functionality.] exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
+        flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
+    - name: Test with pytest - coverage as well.
+      run: |
+         python -m pytest src/test_modules/test_discord_bot_modules.py --junit-xml results_coverage/coverage_results.xml
+         pytest # Runs the default test_modules.
+         coverage run -m --source=. pytest # Runs with coverage.
+         coverage report -m # Runs the reporting aspect of coverage.
+         python -m pytest src/test_modules/test_discord_bot_modules.py --doctest-modules --junitxml=junit/test-results-{3.8}.xml # This is for coveraging the tests with pre-defined methods.
+    - name: Archive code coverage results from Python tests
+      uses: actions/upload-artifact@v2
+      with:
+        name: code-coverage-report from Python tests # Defined the name to clear up console misunderstandings.
+        path: results_coverage/coverage_results.xml # The defined path for the upload. Created for this. Another option is .xml-type archiving. Currently depracated xunit2 family.
+
+# For future TRAVIS CI reference [10.11.2020 - Arttu K.]:         
+#script: 
+ # - coverage run -m --source=. pytest # Run at the current level. Updated. Updating once more.
+#after_success:
+ # - coverage report -m
+ # - coverage report -m >> coverage.txt
+

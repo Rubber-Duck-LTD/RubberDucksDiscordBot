@@ -25,7 +25,7 @@ bot.remove_command('help')
 # all included cogs named as initial_extensions
 initial_extensions = ['cogs.help_command',
                       'cogs.embed_demo',
-                      'cogs.hh_food_menu', # list "[MenusForDays]" seems to be empty at certain times and this prevents the bot from starting. Maybe fix this ASAP?
+                      'cogs.hh_food_menu',
                       'cogs.covid19_information',
                       'cogs.google_picture',
                       'cogs.google_places',
